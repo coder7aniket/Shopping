@@ -1,0 +1,31 @@
+function createItem() 
+{
+    let i,j;
+	var li = document.createElement("li");
+	li.className = "li_1";
+
+
+	var button_1 = document.createElement("button");
+	var txt_1 = document.createTextNode("Remove from cart");
+	button_1.className = "remove";
+
+	var input_1 = document.createElement("h1");
+    input_1.className = "input_1";
+    
+	    input_1.appendChild(document.createTextNode(input.value));
+	    li.appendChild(input_1);
+
+	    ul.appendChild(li);
+	    button_1.appendChild(txt_1);
+	    li.appendChild(button_1);
+
+      for (i = 0; i < close.length; i++)
+        {
+            close[i].onclick = function() 
+            {
+	           this.parentElement.remove();     
+	        }
+  	    }
+
+  	
+}

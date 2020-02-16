@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My shopping hub</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="./shopping.css">
+        <script src="Shopping.js"></script>
+        
+        <div class="A">
+            
+          <div class='A1'>
+            KHARID_LO.COM
+          </div>
+          
+          <div class="A2">
+            <a id="c" href="c:\Users\ankumar\Desktop\New folder (2)\Shopping\cart.html">Show your items </a>
+          </div>
+
+        </div>
+        
+        <div>
+            <nav class='nav'>
+            ||<a id="t" href="C:\Users\ankumar\Desktop\New folder (2)\Shopping\Electronics.html " target="_blank"> Electronics </a> ||
+              <a id="t" href="C:\Users\ankumar\Desktop\New folder (2)\Shopping\Men.html" target="_blank"> Men </a> ||
+              <a id="t" href="C:\Users\ankumar\Desktop\New folder (2)\Shopping\Women.html" target="_blank"> Women </a> ||
+              <a id="t" href="C:\Users\ankumar\Desktop\New folder (2)\Shopping\Grocery.html" target="_blank"> Grocery </a> ||
+              <a id="t" href="C:\Users\ankumar\Desktop\New folder (2)\Shopping\Baby.html" target="_blank"> Kids </a> ||
+              <a id="t" href="C:\Users\ankumar\Desktop\New folder (2)\Shopping\Tv.html" target="_blank"> Tv & Appliances </a> || 
+              <a id="t" href="C:\Users\ankumar\Desktop\New folder (2)\Shopping\Contact.html" target="_blank"> Contact us </a> ||
+              <a id="t" href="C:\Users\ankumar\Desktop\New folder (2)\Shopping\Profile.html" target="_blank"> My Profile </a> ||
+            </nav>
+        </div>
+
+        <div class="B">
+            <input id="Search" type="text" placeholder="Search Your product here...." onkeyup="Search()">
+        </div>
+        
+        <ul id="main" >
+          <li  id="first"  class="card">
+            <img src="7pro.jpg" style="width:100%">
+            <h1 >Oneplus 7 pro</h1>
+            <p>₹43,999</p>
+            <p>Mirror Grey, 8GB RAM, Fluid AMOLED Display, 256GB Storage, 4000mAH Battery</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('first')">
+          </li>
+
+          <li id="second" class="card">
+            <img src="7.jpg" style="width:100%">
+            <h1  >Oneplus 7</h1>
+            <p>₹34,999</p>
+            <p>Red, 8GB RAM, Optic AMOLED Display, 256GB Storage, 3700mAH Battery</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('second')">
+          </li>
+
+          <li id="third"  class="card">
+            <img src="6.jpg" style="width:100%">
+            <h1 >Oneplus 6</h1>
+            <p>₹34,999</p>
+            <p>Mirror Black, 6GB RAM, 64GB Storage</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('third')">
+            
+          </li>
+
+          <li id="fourth" class="card">
+            <img src="11pro.jpg" style="width:100%">
+            <h1 >Iphone 11 pro</h1>
+            <p>₹93,900</p>
+            <p>(64GB) - Space Grey</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('fourth')">
+            
+          </li>
+
+          <li id="fifth" class="card">
+            <img src="11.jpg" style="width:100%">
+            <h1 >Iphone 11</h1>
+            <p>₹64,900</p>
+            <p>(64GB) - Black</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('fifth')">
+            
+          </li>
+
+          <li id="sixth"  class="card">
+            <img src="s10.jpg" style="width:100%">
+            <h1 >Samsung s10 plus</h1>
+            <p>₹55,000</p>
+            <p>8GB RAM, Fluid AMOLED Display, 256GB Storage, 4000mAH Battery</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('sixth')">
+            
+          </li>
+
+          <li id="seventh" class="card">
+            <img src="reno2.jpg" style="width:100%">
+            <h1 >Oppo reno 2</h1>
+            <p>₹35,000</p>
+            <p>8GB RAM, Fluid AMOLED Display, 256GB Storage, 4000mAH Battery</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('seventh')">
+            
+          </li>
+
+          <li  id="eighth" class="card">
+            <img src="v17.jpg" style="width:100%">
+            <h1 >vivo v17 pro</h1>
+            <p>₹27,500</p>
+            <p>Midnight Ocean, 8GB RAM, 128GB Storage</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('eighth')">
+            
+          </li>
+
+          <li id="ninth"  class="card">
+            <img src="x2.jpg" style="width:100%">
+            <h1 >Realme x2 pro</h1>
+            <p>₹24,000</p>
+            <p>6GB RAM, 128GB Storage, 4000mAH Battery</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('ninth')">
+            
+          </li>
+
+          <li id="tenth" class="card">
+            <img src="k30.jpg" style="width:100%">
+            <h1 >Redmi k30</h1>
+            <p>₹30,999</p>
+            <p>6GB RAM, 128GB Storage, 4000mAH Battery</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('tenth')">
+            
+          </li>
+
+          <li id="eleventh" class="card">
+            <img src="8.jpg" style="width:100%">
+            <h1 >Nokia 8.1</h1>
+            <p>₹17,470</p>
+            <p>4GB RAM, 64GB Storage</p>
+            <input type="button" id="addbutton" value="Add to cart" onclick="addcart('eleventh')">
+            
+          </li>
+        </ul>
+
+    </body>
+</html>
