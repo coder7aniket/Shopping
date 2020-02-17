@@ -15,9 +15,21 @@
           </div>
           
           <div class="A2">
-            <a id="c" href="c:\Users\ankumar\Desktop\New folder (2)\Shopping\cart.html">Show your items </a>
-          </div>
+            <button id="myBtn">Your Selected Items</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <input type="button" value="Show my items" onclick="createitem()">
+                      <ul id="Firstul">
 
+                      </ul>
+                      <input type="button" value="Buy Now">
+                </div>
+
+                  
+                </div>
+            </div>
+          </div>
         </div>
         
         <div>
@@ -38,103 +50,124 @@
         </div>
         
         <ul id="main" >
-          <li  id="first"  class="card">
+          <li  class="card">
             <img src="7pro.jpg" style="width:100%">
-            <h1 >Oneplus 7 pro</h1>
+            <h1   id="first"  >Oneplus 7 pro</h1>
             <p>₹43,999</p>
             <p>Mirror Grey, 8GB RAM, Fluid AMOLED Display, 256GB Storage, 4000mAH Battery</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('first')">
           </li>
 
-          <li id="second" class="card">
+          <li class="card">
             <img src="7.jpg" style="width:100%">
-            <h1  >Oneplus 7</h1>
+            <h1  id="second" >Oneplus 7</h1>
             <p>₹34,999</p>
             <p>Red, 8GB RAM, Optic AMOLED Display, 256GB Storage, 3700mAH Battery</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('second')">
           </li>
 
-          <li id="third"  class="card">
+          <li  class="card">
             <img src="6.jpg" style="width:100%">
-            <h1 >Oneplus 6</h1>
+            <h1  id="third" >Oneplus 6</h1>
             <p>₹34,999</p>
             <p>Mirror Black, 6GB RAM, 64GB Storage</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('third')">
             
           </li>
 
-          <li id="fourth" class="card">
+          <li  class="card">
             <img src="11pro.jpg" style="width:100%">
-            <h1 >Iphone 11 pro</h1>
+            <h1 id="fourth" >Iphone 11 pro</h1>
             <p>₹93,900</p>
             <p>(64GB) - Space Grey</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('fourth')">
             
           </li>
 
-          <li id="fifth" class="card">
+          <li class="card">
             <img src="11.jpg" style="width:100%">
-            <h1 >Iphone 11</h1>
+            <h1  id="fifth" >Iphone 11</h1>
             <p>₹64,900</p>
             <p>(64GB) - Black</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('fifth')">
             
           </li>
 
-          <li id="sixth"  class="card">
+          <li   class="card">
             <img src="s10.jpg" style="width:100%">
-            <h1 >Samsung s10 plus</h1>
+            <h1 id="sixth" >Samsung s10 plus</h1>
             <p>₹55,000</p>
             <p>8GB RAM, Fluid AMOLED Display, 256GB Storage, 4000mAH Battery</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('sixth')">
             
           </li>
 
-          <li id="seventh" class="card">
+          <li class="card">
             <img src="reno2.jpg" style="width:100%">
-            <h1 >Oppo reno 2</h1>
+            <h1 id="seventh" >Oppo reno 2</h1>
             <p>₹35,000</p>
             <p>8GB RAM, Fluid AMOLED Display, 256GB Storage, 4000mAH Battery</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('seventh')">
             
           </li>
 
-          <li  id="eighth" class="card">
+          <li  class="card">
             <img src="v17.jpg" style="width:100%">
-            <h1 >vivo v17 pro</h1>
+            <h1 id="eighth" >Vivo v17 pro</h1>
             <p>₹27,500</p>
             <p>Midnight Ocean, 8GB RAM, 128GB Storage</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('eighth')">
             
           </li>
 
-          <li id="ninth"  class="card">
+          <li class="card">
             <img src="x2.jpg" style="width:100%">
-            <h1 >Realme x2 pro</h1>
+            <h1  id="ninth"  >Realme x2 pro</h1>
             <p>₹24,000</p>
             <p>6GB RAM, 128GB Storage, 4000mAH Battery</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('ninth')">
             
           </li>
 
-          <li id="tenth" class="card">
+          <li  class="card">
             <img src="k30.jpg" style="width:100%">
-            <h1 >Redmi k30</h1>
+            <h1 id="tenth" >Redmi k30</h1>
             <p>₹30,999</p>
             <p>6GB RAM, 128GB Storage, 4000mAH Battery</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('tenth')">
             
           </li>
 
-          <li id="eleventh" class="card">
+          <li  class="card">
             <img src="8.jpg" style="width:100%">
-            <h1 >Nokia 8.1</h1>
+            <h1 id="eleventh" >Nokia 8.1</h1>
             <p>₹17,470</p>
             <p>4GB RAM, 64GB Storage</p>
             <input type="button" id="addbutton" value="Add to cart" onclick="addcart('eleventh')">
             
           </li>
         </ul>
+
+        <script>
+          var modal = document.getElementById("myModal");
+          var btn = document.getElementById("myBtn");
+          var span = document.getElementsByClassName("close")[0];
+              btn.onclick = function() {
+
+                modal.style.display = "block";
+              }
+              span.onclick = function() {
+              modal.style.display = "none";
+              }
+              window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+                 }
+              }
+        </script>
+
+
+
 
     </body>
 </html>
